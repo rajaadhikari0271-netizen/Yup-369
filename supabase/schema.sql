@@ -360,6 +360,7 @@ grant execute on function public.current_user_role() to authenticated, anon, ser
 create or replace function public.touch_updated_at()
 returns trigger
 language plpgsql
+set search_path = public
 as $$
 begin
   new.updated_at := now();
@@ -391,6 +392,7 @@ create trigger trg_orders_updated_at
 create or replace function public.protect_profile_privileged_columns()
 returns trigger
 language plpgsql
+set search_path = public
 as $$
 declare
   jwt_role text := coalesce(current_setting('request.jwt.claim.role', true), '');
@@ -435,12 +437,31 @@ create trigger trg_profiles_protect_privileged_columns
 -- ============================================================================
 
 -- Column-level self-service update protection on public.profiles
+revoke select on public.profiles from anon;
 revoke insert, update, delete on public.profiles from anon;
 revoke update, delete on public.profiles from authenticated;
 grant select on public.profiles to authenticated;
 grant insert (auth_user_id, role, name, email, phone, city_area, status, saved_address, approval_status, document_status, is_online)
   on public.profiles to authenticated;
 grant update (name, phone, saved_address, city_area) on public.profiles to authenticated;
+
+-- Defense-in-depth: revoke write and truncate privileges on all 14 non-profiles public tables
+revoke insert, update, delete, truncate on
+  public.service_zones,
+  public.rider_documents,
+  public.rider_service_approvals,
+  public.restaurants,
+  public.menu_items,
+  public.pricing_settings,
+  public.orders,
+  public.order_items,
+  public.payments,
+  public.refunds,
+  public.manual_payouts,
+  public.rider_earnings,
+  public.rider_approval_history,
+  public.audit_logs
+from anon, authenticated;
 
 -- Enable RLS across private_auth and all 15 public tables
 alter table private_auth.legacy_credentials enable row level security;
