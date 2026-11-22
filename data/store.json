@@ -1,0 +1,327 @@
+{
+  "users": [
+    {
+      "id": "cust-1",
+      "role": "CUSTOMER",
+      "name": "Arjun Mehta",
+      "email": "arjun@customer.demo",
+      "phone": "+91 90000 11223",
+      "status": "ACTIVE",
+      "savedAddress": "Flat 402, Amber Heights, Indiranagar 2nd Stage",
+      "passwordHash": "58aa72aacef335222306f6ba10245fc1cdcd7995f1c610bac8839b5410766b66d65667fbdfa4e977d8e10c460470b830781fc8e8163c5a8c0fc456593f55efdb",
+      "passwordSalt": "b3ed5b8e330418629a062858343c7896",
+      "createdAt": "2026-11-22T03:36:04.626Z"
+    }
+  ],
+  "ownerCredential": null,
+  "restaurants": [
+    {
+      "id": "rest-1",
+      "name": "Nizam Handi Biryani",
+      "cuisine": "Hyderabadi · Mughlai",
+      "address": "14 Residency Road, Indiranagar",
+      "prepTimeMins": 25,
+      "rating": 4.7,
+      "imageUrl": "/src/assets/images/rest_biryani_house_1795240192372.jpg",
+      "isOpen": true,
+      "supportsDelivery": true,
+      "supportsSelfPickup": true,
+      "menu": [
+        {
+          "id": "item-101",
+          "restaurantId": "rest-1",
+          "name": "Hyderabadi Chicken Dum Biryani",
+          "description": "Slow-cooked saffron basmati rice layered with marinated chicken, caramelized onions, and mirchi ka salan.",
+          "category": "Biryani",
+          "price": 289,
+          "isVeg": false,
+          "isAvailable": true
+        },
+        {
+          "id": "item-102",
+          "restaurantId": "rest-1",
+          "name": "Subz Zafrani Dum Biryani",
+          "description": "Aromatic basmati rice baked with seasonal vegetables, paneer cubes, and mint raita.",
+          "category": "Biryani",
+          "price": 239,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-103",
+          "restaurantId": "rest-1",
+          "name": "Tandoori Chicken Tikka (6 pcs)",
+          "description": "Charcoal-grilled boneless chicken marinated in hung curd and roasted spices.",
+          "category": "Starters",
+          "price": 259,
+          "isVeg": false,
+          "isAvailable": true
+        },
+        {
+          "id": "item-104",
+          "restaurantId": "rest-1",
+          "name": "Paneer Peshawari Tikka",
+          "description": "Smoky cottage cheese skewers glazed with crushed coriander and yellow chilli.",
+          "category": "Starters",
+          "price": 229,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-105",
+          "restaurantId": "rest-1",
+          "name": "Double Ka Meetha",
+          "description": "Warm saffron-soaked bread pudding garnished with roasted pistachios.",
+          "category": "Desserts",
+          "price": 119,
+          "isVeg": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rest-2",
+      "name": "369 Burger Garage",
+      "cuisine": "Smash Burgers · Fries",
+      "address": "82 100 Feet Road, Koramangala",
+      "prepTimeMins": 18,
+      "rating": 4.6,
+      "imageUrl": "/src/assets/images/rest_burger_garage_1795240191244.jpg",
+      "isOpen": true,
+      "supportsDelivery": true,
+      "supportsSelfPickup": true,
+      "menu": [
+        {
+          "id": "item-201",
+          "restaurantId": "rest-2",
+          "name": "Double Cheddar Smash Burger",
+          "description": "Two seared patties, aged cheddar, house pickles, and smoky garage sauce on toasted brioche.",
+          "category": "Burgers",
+          "price": 249,
+          "isVeg": false,
+          "isAvailable": true
+        },
+        {
+          "id": "item-202",
+          "restaurantId": "rest-2",
+          "name": "Crispy Herb Paneer Burger",
+          "description": "Spiced crunchy paneer fillet with jalapeño slaw and garlic mayo.",
+          "category": "Burgers",
+          "price": 199,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-203",
+          "restaurantId": "rest-2",
+          "name": "Peri-Peri Crinkle Fries",
+          "description": "Golden crispy fries dusted with house peri-peri spice and cheddar dip.",
+          "category": "Sides",
+          "price": 119,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-204",
+          "restaurantId": "rest-2",
+          "name": "Hot Wings Basket (6 pcs)",
+          "description": "Crispy chicken wings tossed in tangy cayenne honey glaze.",
+          "category": "Sides",
+          "price": 219,
+          "isVeg": false,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rest-3",
+      "name": "Udupi Express Kitchen",
+      "cuisine": "South Indian · Tiffin",
+      "address": "5 Church Street, MG Road",
+      "prepTimeMins": 15,
+      "rating": 4.8,
+      "imageUrl": "/src/assets/images/rest_south_express_1795240190513.jpg",
+      "isOpen": true,
+      "supportsDelivery": true,
+      "supportsSelfPickup": true,
+      "menu": [
+        {
+          "id": "item-301",
+          "restaurantId": "rest-3",
+          "name": "Ghee Roast Masala Dosa",
+          "description": "Crisp fermented crepe roasted in pure ghee, stuffed with tempered potato masala, served with 3 chutneys & sambar.",
+          "category": "Dosa",
+          "price": 135,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-302",
+          "restaurantId": "rest-3",
+          "name": "Podi Button Idli (10 pcs)",
+          "description": "Steamed mini rice cakes tossed in roasted gun-powder podi and warm ghee.",
+          "category": "Tiffin",
+          "price": 115,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-303",
+          "restaurantId": "rest-3",
+          "name": "Rava Onion Dosa",
+          "description": "Lacy semolina crisp dosa studded with green chillies, curry leaves, and shallots.",
+          "category": "Dosa",
+          "price": 145,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-304",
+          "restaurantId": "rest-3",
+          "name": "Madras Filter Kaapi",
+          "description": "Traditional frothy decoction coffee brewed with chicory and farm milk.",
+          "category": "Beverages",
+          "price": 55,
+          "isVeg": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rest-4",
+      "name": "Wok & Flame Street",
+      "cuisine": "Indo-Chinese · Bowls",
+      "address": "29 Lavelle Road, Shanthala Nagar",
+      "prepTimeMins": 22,
+      "rating": 4.5,
+      "imageUrl": "/src/assets/images/rest_wok_street_1795240192235.jpg",
+      "isOpen": true,
+      "supportsDelivery": true,
+      "supportsSelfPickup": true,
+      "menu": [
+        {
+          "id": "item-401",
+          "restaurantId": "rest-4",
+          "name": "Burnt Garlic Veg Hakka Noodles",
+          "description": "High-flame wok noodles tossed with crisp bell peppers, scallions, and toasted garlic.",
+          "category": "Noodles & Rice",
+          "price": 189,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-402",
+          "restaurantId": "rest-4",
+          "name": "Crispy Chilli Paneer Bowl",
+          "description": "Wok-tossed cottage cheese cubes in smoky soy-chilli glaze over steamed fried rice.",
+          "category": "Bowls",
+          "price": 229,
+          "isVeg": true,
+          "isAvailable": true
+        },
+        {
+          "id": "item-403",
+          "restaurantId": "rest-4",
+          "name": "Schezwan Chicken Fried Rice",
+          "description": "Fiery house-made Schezwan peppercorn fried rice with diced chicken and spring onion.",
+          "category": "Noodles & Rice",
+          "price": 239,
+          "isVeg": false,
+          "isAvailable": true
+        },
+        {
+          "id": "item-404",
+          "restaurantId": "rest-4",
+          "name": "Steamed Veg Momos (8 pcs)",
+          "description": "Delicate dumplings filled with ginger-cabbage mince and fiery red chilli dip.",
+          "category": "Dimsum",
+          "price": 149,
+          "isVeg": true,
+          "isAvailable": true
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1002",
+      "orderNumber": "YUP-1002",
+      "customerId": "cust-1",
+      "customerName": "Arjun Mehta",
+      "customerPhone": "+91 90000 11223",
+      "restaurantId": "rest-3",
+      "restaurantName": "Udupi Express Kitchen",
+      "restaurantAddress": "5 Church Street, MG Road",
+      "serviceType": "SELF_PICKUP",
+      "items": [
+        {
+          "menuItemId": "item-301",
+          "name": "Ghee Roast Masala Dosa",
+          "price": 135,
+          "quantity": 2,
+          "isVeg": true
+        }
+      ],
+      "subtotal": 270,
+      "deliveryFee": 0,
+      "platformFee": 6,
+      "totalAmount": 276,
+      "riderFee": 0,
+      "pickupInstructions": "Collect at Counter #2 using Order YUP-1002",
+      "paymentMethod": "PAY_AT_COUNTER",
+      "paymentStatus": "PENDING_COLLECTION",
+      "status": "PREPARING",
+      "assignedRiderId": null,
+      "assignedRiderName": null,
+      "assignedRiderPhone": null,
+      "assignedRiderPlate": null,
+      "riderJobStatus": "UNASSIGNED",
+      "milestones": [
+        {
+          "status": "PLACED",
+          "label": "Self-pickup order placed (Pay at Counter)",
+          "timestamp": "2026-11-22T03:36:04.626Z",
+          "actor": "Customer"
+        },
+        {
+          "status": "CONFIRMED",
+          "label": "Accepted by kitchen",
+          "timestamp": "2026-11-22T03:36:04.626Z",
+          "actor": "Owner"
+        },
+        {
+          "status": "PREPARING",
+          "label": "Kitchen preparing order",
+          "timestamp": "2026-11-22T03:36:04.626Z",
+          "actor": "Owner"
+        }
+      ],
+      "createdAt": "2026-11-22T03:36:04.626Z",
+      "updatedAt": "2026-11-22T03:36:04.626Z"
+    }
+  ],
+  "pricing": {
+    "baseDeliveryFee": 29,
+    "freeDeliveryThreshold": 399,
+    "platformFee": 6,
+    "selfPickupFee": 0,
+    "riderCommissionPercent": 80,
+    "updatedAt": "2026-11-22T03:36:04.626Z"
+  },
+  "riderEarnings": [],
+  "manualPayouts": [],
+  "riderApprovalHistory": [],
+  "auditLogs": [
+    {
+      "id": "audit-1",
+      "timestamp": "2026-11-22T03:36:04.626Z",
+      "actorId": "system",
+      "actorRole": "SYSTEM",
+      "actorEmail": "system@yup369.local",
+      "action": "MVP_SEED_INITIALIZED",
+      "target": "Platform Store",
+      "details": "Initialized Yup! 369 MVP with Food Delivery & Self-Pickup active; Grocery, Parcel, and Bike Taxi disabled."
+    }
+  ],
+  "orderCounter": 1002
+}

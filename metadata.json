@@ -1,0 +1,6 @@
+{
+  "name": "Yup! 369",
+  "description": "Mobile-first food delivery and restaurant self-pickup Progressive Web App with Customer, Rider, and Owner consoles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
